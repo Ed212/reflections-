@@ -37,4 +37,5 @@ How might using version control make you more confident to make changes that cou
 
 You can always revert back to previous versions of your code before a bug has been introduced
 
+Done with lesson 1
 
