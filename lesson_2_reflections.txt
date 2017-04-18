@@ -1,0 +1,6 @@
+*What happens when you initialize a repository? Why do you need to do it?
+When you initialize a repo, git starts keeping track of the that directory by adding a hidden .git folder that would contain the history of commits and all git related transactions.
+
+*How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area is a transient directory that allow you to add the files that you want commit to operate on. For instance you might want ti commit changes to some file in the working directory but not the other- for a reason or another like viewing those files as a coherent logical entities- then perform commit will only start tracking those files.
+
