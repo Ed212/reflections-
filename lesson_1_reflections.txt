@@ -1,0 +1,40 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+By seeing the changes that has been committed to the file before the bug appeared.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+B understanding the evolution of your code and how to avoid common mistakes.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+pros: You commit when there are logical changes and essentially that would be useful
+by producing a versions of the file that are easier to to compare as opposed to auto saving of versions which can lead to many many versions with many minor differences that are hard to compare and decipher.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Because there are interdependency between files so tracking all of them will enable easier bug detection and interdependencies.
+
+###
+git filter-branch --env-filter '
+OLD_EMAIL=“saed_haddad@yahoo.com"
+CORRECT_NAME=“Ed”
+CORRECT_EMAIL=“edhaddad212@yahoo.com”
+if [ "$GIT_COMMITTER_EMAIL" = "$saed_haddad@yahoo.com” ]
+then
+    export GIT_COMMITTER_NAME="$Ed”
+    export GIT_COMMITTER_EMAIL="$edhaddad212@yahoo.com”
+fi
+if [ "$GIT_AUTHOR_EMAIL" = “$saed_haddad@yahoo.com” ]
+then
+    export GIT_AUTHOR_NAME="$Ed”
+    export GIT_AUTHOR_EMAIL="$edhaddad212@yahoo.com”
+fi
+' --tag-name-filter cat -- --branches --tags
+##
+
+How can you use the commands git log and git diff to view the history of files?
+git log enables you to view the history of commits and of you wrote good messages 
+for each commit you can use git diff to see the changes that led to whatever you are trying to figure out.
+
+How might using version control make you more confident to make changes that could break something?
+
+You can always revert back to previous versions of your code before a bug has been introduced
+
+
