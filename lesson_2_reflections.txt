@@ -4,3 +4,22 @@ When you initialize a repo, git starts keeping track of the that directory by ad
 *How is the staging area different from the working directory and the repository? What value do you think it offers?
 Staging area is a transient directory that allow you to add the files that you want commit to operate on. For instance you might want ti commit changes to some file in the working directory but not the other- for a reason or another like viewing those files as a coherent logical entities- then perform commit will only start tracking those files.
 
+*How can you use the staging area to make sure you have one commit per logical change?
+By adding the logical change to the staging area then performing a git commit per logical change
+
+*How can you use the staging area to make sure you have one commit per logical change?
+Once you’re done adding changes to files in your working directory you can use git diff to see the differences between the most recent version in the staging area which by the way matches the most recent commit (if it was committed) then add this logical change to the staging area then compare it using git diff —-staged to see the discrepancies with the repo then commit those changes to the repo…. staging area acts like a buffer zone between the working directory and the repo.
+Also it allows you to work on ,multiple things and only commit the things that you’re sure you wanna commit.
+
+*What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Some of the situations where branches wold help is when you want to try out an experimental path in your development by allowing you to create a new version that of your code base that has its own commits and history while maintaining the option to merge this new path with the the original master.
+
+*How do the diagrams help you visualize the branch structure?
+By identifying brach master relationships 
+
+*What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result is a unified code base that adds the features that have been introduced through the brach while allowing the continuous development of the meter branch. Merge conflicts could emerge when the the branch and the master don’t share a mutual staring commit.
+
+How do you configure username for git?
+git config --global user.name "Mona Lisa"
+
