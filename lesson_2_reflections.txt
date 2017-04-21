@@ -23,3 +23,19 @@ The result is a unified code base that adds the features that have been introduc
 How do you configure username for git?
 git config --global user.name "Mona Lisa"
 
+Replace users
+#user1 account
+Host github.com-Sam
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-Sam
+
+#user2 account
+Host github.com-ed212
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-ed212
+
+AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/edSSH.pub
