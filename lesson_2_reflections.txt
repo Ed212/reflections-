@@ -39,3 +39,6 @@ Host github.com-ed212
 AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/edSSH.pub
+
+
+git config --global user.name “ed212” && git config --global user.email “edhaddad212@gmail.com”
