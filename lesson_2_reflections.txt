@@ -45,3 +45,6 @@ git config --global user.name “ed212” && git config --global user.email “e
 
 git remote set-url origin "https://Ed212@github.com/Ed212/Reflections.git"
 
+*How to best solve an error?
+Instead one just copying and pasting the error try to search for the exact situation that’s happening, for example I had an old git hub account and I am getting 403 error not just the error message that I am getting 
+
