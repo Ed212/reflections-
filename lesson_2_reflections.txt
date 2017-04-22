@@ -42,3 +42,6 @@ AddKeysToAgent yes
 
 
 git config --global user.name “ed212” && git config --global user.email “edhaddad212@gmail.com”
+
+git remote set-url origin "https://Ed212@github.com/Ed212/Reflections.git"
+
