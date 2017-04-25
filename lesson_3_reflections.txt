@@ -1,0 +1,3 @@
+*When would you want to use a remote repository rather than keeping all your work
+local?
+2 main usecases: 1. Collaborate with others 2. backup your work 
