@@ -23,27 +23,7 @@ The result is a unified code base that adds the features that have been introduc
 How do you configure username for git?
 git config --global user.name "Mona Lisa"
 
-Replace users
-#user1 account
-Host github.com-Sam
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/github-Sam
 
-#user2 account
-Host github.com-ed212
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/github-ed212
-
-AddKeysToAgent yes
- UseKeychain yes
- IdentityFile ~/.ssh/edSSH.pub
-
-
-git config --global user.name “ed212” && git config --global user.email “edhaddad212@gmail.com”
-
-git remote set-url origin "https://Ed212@github.com/Ed212/Reflections.git"
 
 *How to best solve an error?
 Instead one just copying and pasting the error try to search for the exact situation that’s happening, for example I had an old git hub account and I am getting 403 error not just the error message that I am getting 
