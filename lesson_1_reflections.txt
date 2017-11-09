@@ -11,23 +11,8 @@ by producing a versions of the file that are easier to to compare as opposed to 
 Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
 Because there are interdependency between files so tracking all of them will enable easier bug detection and interdependencies.
 
-###
-git filter-branch --env-filter '
-OLD_EMAIL=“saed_haddad@yahoo.com"
-CORRECT_NAME=“Ed”
-CORRECT_EMAIL=“edhaddad212@yahoo.com”
-if [ "$GIT_COMMITTER_EMAIL" = "$saed_haddad@yahoo.com” ]
-then
-    export GIT_COMMITTER_NAME="$Ed”
-    export GIT_COMMITTER_EMAIL="$edhaddad212@yahoo.com”
-fi
-if [ "$GIT_AUTHOR_EMAIL" = “$saed_haddad@yahoo.com” ]
-then
-    export GIT_AUTHOR_NAME="$Ed”
-    export GIT_AUTHOR_EMAIL="$edhaddad212@yahoo.com”
-fi
-' --tag-name-filter cat -- --branches --tags
-##
+
+
 
 How can you use the commands git log and git diff to view the history of files?
 git log enables you to view the history of commits and of you wrote good messages 
